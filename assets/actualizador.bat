@@ -2,15 +2,15 @@
 
 ::https://git-scm.com/downloads
 
-rd /s /q %~d0%~p0\mods /s
+rd /s /q "%~d0%~p0\mods" /s
 taskkill /IM javaw.exe /F
 cls
-del  %userprofile%\AppData\Roaming\.minecraft\mods\*.jar
+del  "%userprofile%\AppData\Roaming\.minecraft\mods\*.jar"
 git clone https://github.com/Soulote/mods.git
 timeout /t 1
-xcopy %~d0%~p0\mods\*.* %userprofile%\AppData\Roaming\.minecraft\mods /y
+xcopy "%~d0%~p0\mods\*.*" "%userprofile%\AppData\Roaming\.minecraft\mods" /y
 
-rd /s /q %~d0%~p0\mods /s
+rd /s /q "%~d0%~p0\mods" /s
 
 cls
 
