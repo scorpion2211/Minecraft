@@ -46,7 +46,7 @@
     {
         "titulo": "Actualizador de MODS",
         "img": "assets/img/actualizador.jpg",
-        "subtitulo": "script",
+        "subtitulo": "script - Versión 2.3",
         "descripción": " Con este archivo y su simple ejecución descargará los nuevos mods incorporados al servidor.",
         "link": "assets/actualizador.bat",
         "link2": "",
