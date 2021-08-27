@@ -2,18 +2,18 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Sitio Web hecho para juegar minecraft entre amigos">
-    <meta name="author" content="Ignacio Arias">
-    <link rel="icon" href="favicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="Sitio Web hecho para juegar minecraft entre amigos" />
+    <meta name="author" content="Ignacio Arias" />
+    <link rel="icon" href="favicon.png" />
     <title>Portafolio IA</title>
 
     <!-- Place your stylesheet here-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/fontello/css/fontello.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sweetalert.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fontello/css/fontello.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/sweetalert.css" rel="stylesheet" />
 
     <style>
         .fondo {
@@ -25,17 +25,17 @@
             background-size: cover;
             transition: all 3s;
         }
-
+        
         .main_container {
             min-height: 100vh;
             position: absolute;
             background: transparent;
         }
-
+        
         header {
             perspective: 250px;
         }
-
+        
         h1 {
             font-size: 7vw;
             text-shadow: 3px -4px 1px #000, -3px 1px 1px #000, 3px 1px 1px #000, 0px 1px 1px #000, 0px 2px 1px #000, 0px 3px 1px #000, 0px 4px 1px #000, 0px 5px 1px #000, 0px 6px 1px #000, 0px 7px 1px #000, 0px 8px 1px #000, 0px 9px 1px #000, 0px 10px 1px #000, 0px 10px 1px #000, 0px 11px 1px #000, 0px 12px 1px #000, 0px 13px 1px #000, 0px 14px 1px #000, 0px 15px 1px #000, 0px 16px 1px #000, 0px 17px 1px #000;
@@ -43,120 +43,116 @@
             color: #c5b6b3;
             transform: rotateX(40deg);
         }
-
+        
         .f1 {
             background-image: url("assets/img/fondo1.jpg");
         }
-
+        
         .f2 {
             background-image: url("assets/img/fondo2.jpg");
         }
-
+        
         .f3 {
             background-image: url("assets/img/fondo3.jpg");
         }
-
+        
         .f4 {
             background-image: url("assets/img/fondo4.jpg");
         }
-
+        
         .f5 {
             background-image: url("assets/img/fondo5.jpg");
         }
-
+        
         .f6 {
             background-image: url("assets/img/fondo6.png");
         }
-
+        
         .f1c {
             background-image: url("assets/img/fondos/fondo1.jpg");
         }
-
+        
         .f2c {
             background-image: url("assets/img/fondos/fondo2.jpg");
         }
-
+        
         .f3c {
             background-image: url("assets/img/fondos/fondo3.jpg");
         }
-
+        
         .f4c {
             background-image: url("assets/img/fondos/fondo4.jpg");
         }
-
+        
         .f5c {
             background-image: url("assets/img/fondos/fondo5.jpg");
         }
-
+        
         .f6c {
             background-image: url("assets/img/fondos/fondo6.jpg");
         }
-
     </style>
 </head>
 
 <body>
-    <div class='fondo' id="fondo"></div>
+    <div class="fondo" id="fondo"></div>
     <main role="main" class="main_container">
-        <header class='text-center'>
-            <img src="assets/img/logo.png" width="60%" alt="">
+        <header class="text-center">
+            <img src="assets/img/logo.png" width="60%" alt="" />
             <div>
                 <h1>SOUL</h1>
             </div>
         </header>
-        <div class="flex_row flex_around flex_wrap p-3" id="links">
-
-        </div>
+        <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
     </main>
-
 
     <!-- Modal Video -->
     <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal_app" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <form class="modal-content" id='form_send'>
+            <form class="modal-content" id="form_send">
                 <div class="modal-header">
                     <h5 class="modal-title" id="title_app">Video Tutorial de GIT</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="PausarVideo()">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+              <span aria-hidden="true">&times;</span>
+            </button>
                 </div>
-                <div class="modal-body" style="background-color: #000;">
+                <div class="modal-body" style="background-color: #000">
                     <!--iframe width="560" height="315" src="https://www.youtube.com/embed/HmvcGeRQZ9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
                     <video width="100%" controls id="mi_video">
-                        <source src="assets/TutorialGit.mp4" type="video/mp4" />
-                        <source src="assets/TutorialGit.webm" type="video/webm" />
-                        <source src="assets/TutorialGit.ogv" type="video/ogg" />
-                        <img src="assets/img/portada.jpg" alt="Video no soportado" />
-                        Su navegador no soporta contenido multimedia.
-                    </video>
+              <source src="assets/TutorialGit.mp4" type="video/mp4" />
+              <source src="assets/TutorialGit.webm" type="video/webm" />
+              <source src="assets/TutorialGit.ogv" type="video/ogg" />
+              <img src="assets/img/portada.jpg" alt="Video no soportado" />
+              Su navegador no soporta contenido multimedia.
+            </video>
                 </div>
             </form>
         </div>
     </div>
 
-
     <!-- Modal App -->
     <div class="modal fade" id="modal-instructivo" tabindex="-1" role="dialog" aria-labelledby="modal_app" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <form class="modal-content" id='form_send'>
+            <form class="modal-content" id="form_send">
                 <div class="modal-header">
                     <h5 class="modal-title" id="title_app">Pasos de Instalación</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+              <span aria-hidden="true">&times;</span>
+            </button>
                 </div>
                 <div class="modal-body">
-                    <ol start='1'>
+                    <ol start="1">
                         <li>1 - Instalar Java</li>
                         <li>2 - Ejecutar el Launcher Phoenix y luego cerrarlo</li>
                         <li>3 - Ejecutar Fabric Installer (v1.16.5)</li>
                         <li>4 - Instalar GIT</li>
                         <li>5 - Ejecutar el Actualizador de Mods</li>
-                        <li>6 - Abrir el Launcher y seleccionar arriba a la derecha, el perfil de Fabric Installer</li>
+                        <li>
+                            6 - Abrir el Launcher y seleccionar arriba a la derecha, el perfil de Fabric Installer
+                        </li>
                         <li>6 - Iniciar sesion en el Launcher abajo a la derecha</li>
                         <li>6 - Click en Iniciar Juego</li>
                     </ol>
-
                 </div>
             </form>
         </div>
@@ -169,52 +165,51 @@
 
     <script>
         function PausarVideo() {
-            var mi_video = document.getElementById('mi_video');
-            mi_video.pause()
+            var mi_video = document.getElementById("mi_video");
+            mi_video.pause();
         }
 
         function VerificarFondo() {
-            var fondo = localStorage.getItem('fondo');
+            var fondo = localStorage.getItem("fondo");
             if (fondo) {
                 switch (fondo) {
-                    case '1':
-                        localStorage.setItem('fondo', '2');
-                        $('#fondo').addClass('f2');
-                        $('#fondo').removeClass('f1');
+                    case "1":
+                        localStorage.setItem("fondo", "2");
+                        $("#fondo").addClass("f2");
+                        $("#fondo").removeClass("f1");
                         break;
 
-                    case '2':
-                        localStorage.setItem('fondo', '3');
-                        $('#fondo').addClass('f3');
-                        $('#fondo').removeClass('f2');
+                    case "2":
+                        localStorage.setItem("fondo", "3");
+                        $("#fondo").addClass("f3");
+                        $("#fondo").removeClass("f2");
                         break;
 
-                    case '3':
-                        localStorage.setItem('fondo', '4');
-                        $('#fondo').addClass('f4');
-                        $('#fondo').removeClass('f3');
+                    case "3":
+                        localStorage.setItem("fondo", "4");
+                        $("#fondo").addClass("f4");
+                        $("#fondo").removeClass("f3");
                         break;
 
-                    case '4':
-                        localStorage.setItem('fondo', '5');
-                        $('#fondo').addClass('f5');
-                        $('#fondo').removeClass('f4');
+                    case "4":
+                        localStorage.setItem("fondo", "5");
+                        $("#fondo").addClass("f5");
+                        $("#fondo").removeClass("f4");
                         break;
-                    case '5':
-                        localStorage.setItem('fondo', '6');
-                        $('#fondo').addClass('f6');
-                        $('#fondo').removeClass('f5');
+                    case "5":
+                        localStorage.setItem("fondo", "6");
+                        $("#fondo").addClass("f6");
+                        $("#fondo").removeClass("f5");
                         break;
-                    case '6':
-                        localStorage.setItem('fondo', '1');
-                        $('#fondo').addClass('f1');
-                        $('#fondo').removeClass('f6');
+                    case "6":
+                        localStorage.setItem("fondo", "1");
+                        $("#fondo").addClass("f1");
+                        $("#fondo").removeClass("f6");
                         break;
                 }
-
             } else {
-                localStorage.setItem('fondo', '1');
-                $('#fondo').addClass('f1');
+                localStorage.setItem("fondo", "1");
+                $("#fondo").addClass("f1");
             }
         }
 
@@ -222,7 +217,7 @@
             VerificarFondo();
 
             const xhttp_links = new XMLHttpRequest();
-            xhttp_links.open('GET', 'links.json', true);
+            xhttp_links.open("GET", "links.json", true);
 
             xhttp_links.send();
             xhttp_links.onreadystatechange = function() {
@@ -230,12 +225,14 @@
                     //console.log(this.responseText);
                     list_links = JSON.parse(this.responseText);
                     var links = "";
-                    list_links.map(x => {
-                        links += `<div class="blog-card">
+                    list_links.map((x) => {
+                        if (x.link2 != "") {
+                            links += `<div class="blog-card">
                                     <div class="meta">
                                         <div class="photo" style="background-image: url(${x.img}); "></div>
-                                        <ul class="details flex_row flex_center flex_center_vertical">
-                                            <a href="${x.link}" ${x.download}>Descargar</a>
+                                        <ul class="details flex_column flex_center flex_center_vertical">
+                                            <a href="${x.link}" ${x.download}><span class='icon-download'></span>Archivo 1</a>
+                                            <a href="${x.link2}" ${x.download}><span class='icon-download'></span>Archivo 2</a>
                                         </ul>
                                     </div>
                                     <div class="description">
@@ -247,17 +244,33 @@
                                         </p-->
                                     </div>
                                 </div>`;
+                        } else {
+                            links += `<div class="blog-card">
+                                    <div class="meta">
+                                        <div class="photo" style="background-image: url(${x.img}); "></div>
+                                        <ul class="details flex_column flex_center flex_center_vertical">
+                                            <a href="${x.link}" ${x.download}><span class='icon-download'></span>Descargar</a>
+                                        </ul>
+                                    </div>
+                                    <div class="description">
+                                        <h2>${x.titulo}</h2>
+                                        <h3>${x.subtitulo}</h3>
+                                        <p>${x.descripción}</p>
+                                        <!--p class="read-more">
+                                            <a href="#">Descargar</a>
+                                        </p-->
+                                    </div>
+                                </div>`;
+                        }
                     });
-                    $('#links').html(links);
+                    $("#links").html(links);
                 }
-            }
+            };
             /* setInterval(function() {
-                VerificarFondo();
-            }, 6000); */
+                                                        VerificarFondo();
+                                                    }, 6000); */
         });
-
     </script>
-
 </body>
 
 </html>
