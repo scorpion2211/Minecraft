@@ -25,17 +25,17 @@
             background-size: cover;
             transition: all 3s;
         }
-        
+
         .main_container {
             min-height: 100vh;
             position: absolute;
             background: transparent;
         }
-        
+
         header {
             perspective: 250px;
         }
-        
+
         h1 {
             font-size: 7vw;
             text-shadow: 3px -4px 1px #000, -3px 1px 1px #000, 3px 1px 1px #000, 0px 1px 1px #000, 0px 2px 1px #000, 0px 3px 1px #000, 0px 4px 1px #000, 0px 5px 1px #000, 0px 6px 1px #000, 0px 7px 1px #000, 0px 8px 1px #000, 0px 9px 1px #000, 0px 10px 1px #000, 0px 10px 1px #000, 0px 11px 1px #000, 0px 12px 1px #000, 0px 13px 1px #000, 0px 14px 1px #000, 0px 15px 1px #000, 0px 16px 1px #000, 0px 17px 1px #000;
@@ -43,54 +43,55 @@
             color: #c5b6b3;
             transform: rotateX(40deg);
         }
-        
+
         .f1 {
             background-image: url("assets/img/fondo1.jpg");
         }
-        
+
         .f2 {
             background-image: url("assets/img/fondo2.jpg");
         }
-        
+
         .f3 {
             background-image: url("assets/img/fondo3.jpg");
         }
-        
+
         .f4 {
             background-image: url("assets/img/fondo4.jpg");
         }
-        
+
         .f5 {
             background-image: url("assets/img/fondo5.jpg");
         }
-        
+
         .f6 {
             background-image: url("assets/img/fondo6.png");
         }
-        
+
         .f1c {
             background-image: url("assets/img/fondos/fondo1.jpg");
         }
-        
+
         .f2c {
             background-image: url("assets/img/fondos/fondo2.jpg");
         }
-        
+
         .f3c {
             background-image: url("assets/img/fondos/fondo3.jpg");
         }
-        
+
         .f4c {
             background-image: url("assets/img/fondos/fondo4.jpg");
         }
-        
+
         .f5c {
             background-image: url("assets/img/fondos/fondo5.jpg");
         }
-        
+
         .f6c {
             background-image: url("assets/img/fondos/fondo6.jpg");
         }
+
     </style>
 </head>
 
@@ -122,12 +123,12 @@
                 <div class="modal-body" style="background-color: #000;">
                     <!--iframe width="560" height="315" src="https://www.youtube.com/embed/HmvcGeRQZ9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
                     <video width="100%" controls id="mi_video">
-                        <source src="assets/tutorialGit.mp4" type="video/mp4" />
-                        <source src="assets/tutorialGit.webm" type="video/webm" />
-                        <source src="assets/tutorialGit.ogv" type="video/ogg" />
+                        <source src="assets/TutorialGit.mp4" type="video/mp4" />
+                        <source src="assets/TutorialGit.webm" type="video/webm" />
+                        <source src="assets/TutorialGit.ogv" type="video/ogg" />
                         <img src="assets/img/portada.jpg" alt="Video no soportado" />
                         Su navegador no soporta contenido multimedia.
-                      </video>
+                    </video>
                 </div>
             </form>
         </div>
@@ -225,12 +226,12 @@
 
             xhttp_links.send();
             xhttp_links.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        //console.log(this.responseText);
-                        list_links = JSON.parse(this.responseText);
-                        var links = "";
-                        list_links.map(x => {
-                            links += `<div class="blog-card">
+                if (this.readyState == 4 && this.status == 200) {
+                    //console.log(this.responseText);
+                    list_links = JSON.parse(this.responseText);
+                    var links = "";
+                    list_links.map(x => {
+                        links += `<div class="blog-card">
                                     <div class="meta">
                                         <div class="photo" style="background-image: url(${x.img}); "></div>
                                         <ul class="details flex_row flex_center flex_center_vertical">
@@ -246,14 +247,15 @@
                                         </p-->
                                     </div>
                                 </div>`;
-                        });
-                        $('#links').html(links);
-                    }
+                    });
+                    $('#links').html(links);
                 }
-                /* setInterval(function() {
-                    VerificarFondo();
-                }, 6000); */
+            }
+            /* setInterval(function() {
+                VerificarFondo();
+            }, 6000); */
         });
+
     </script>
 
 </body>
