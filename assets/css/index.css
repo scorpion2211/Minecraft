@@ -163,7 +163,7 @@ a:hover {
     width: 40%;
     flex-direction: column;
     margin: 1rem auto;
-    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.6%;
     background: #fff;
     line-height: 1.4;
@@ -177,10 +177,12 @@ a:hover {
 
 .blog-card a {
     color: inherit;
+    transition: all 0.5s;
 }
 
 .blog-card a:hover {
-    color: #5ad67d;
+    color: #46df71;
+    transform: scale(1.1);
 }
 
 .blog-card:hover .photo {
@@ -225,15 +227,11 @@ a:hover {
     left: -100%;
     margin: auto;
     transition: left 0.2s;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
     width: 100%;
     font-size: 0.9rem;
-}
-
-.blog-card .details a {
-    text-decoration: dotted underline;
 }
 
 .blog-card .details ul li {
@@ -376,6 +374,11 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+    .blog-card .details,
+    .blog-card .details ul a {
+        text-decoration: none !important;
+        font-size: 10vw !important;
+    }
     .blog-card {
         width: 80%;
     }
