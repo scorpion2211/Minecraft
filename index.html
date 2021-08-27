@@ -17,40 +17,6 @@
     <link href="assets/css/sweetalert.css" rel="stylesheet" />
 
     <style>
-        body {
-            height: 100vh;
-        }
-        
-        .fondo {
-            height: 100vh;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            /*background-image: url(assets/img/fondo5.jpg);*/
-            background-size: cover;
-            transition: all 3s;
-        }
-        
-        .main_container {
-            min-height: 100vh;
-            position: absolute;
-            background: transparent;
-            width: 100%;
-            height: 100vh;
-        }
-        
-        header {
-            perspective: 250px;
-        }
-        
-        h1 {
-            font-size: 7vw;
-            text-shadow: 3px -4px 1px #000, -3px 1px 1px #000, 3px 1px 1px #000, 0px 1px 1px #000, 0px 2px 1px #000, 0px 3px 1px #000, 0px 4px 1px #000, 0px 5px 1px #000, 0px 6px 1px #000, 0px 7px 1px #000, 0px 8px 1px #000, 0px 9px 1px #000, 0px 10px 1px #000, 0px 10px 1px #000, 0px 11px 1px #000, 0px 12px 1px #000, 0px 13px 1px #000, 0px 14px 1px #000, 0px 15px 1px #000, 0px 16px 1px #000, 0px 17px 1px #000;
-            font-family: Minecraft;
-            color: #c5b6b3;
-            transform: rotateX(40deg);
-        }
-        
         .f1 {
             background-image: url("assets/img/fondo1.jpg");
         }
@@ -98,55 +64,6 @@
         .f6c {
             background-image: url("assets/img/fondos/fondo6.jpg");
         }
-        
-        .loading {
-            position: sticky;
-            top: 0;
-            z-index: 2000;
-            background-color: #000;
-            width: 100%;
-            height: 100vh;
-            color: #e15b64;
-            font-size: 50px;
-            animation: fadeOut 2.5s;
-            animation-fill-mode: forwards;
-            opacity: 0;
-        }
-        
-        .page {
-            position: absolute;
-            width: 100%;
-            height: 100vh;
-            top: 0;
-        }
-        
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-            70% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-        
-        .girar {
-            animation: girar 1s linear infinite;
-        }
-        
-        @keyframes girar {
-            0% {
-                transform: rotate(0deg);
-            }
-            50% {
-                transform: rotate(180deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
     </style>
 </head>
 
@@ -159,11 +76,11 @@
             <h2 class="h1">Cargando...</h2>
             <i class="fas fa-cog fa-spin"></i>
         </div>
-        <div class="page">
+        <div class="page fadeIn">
             <header class="text-center">
-                <img src="assets/img/logo.png" width="60%" alt="" />
+                <img class="agrandar" src="assets/img/logo.png" width="60%" alt="" />
                 <div>
-                    <h1>SOUL</h1>
+                    <h1 class="desdeArriba">SOUL</h1>
                 </div>
             </header>
             <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
@@ -287,14 +204,21 @@
             xhttp_links.open("GET", "links.json", true);
 
             xhttp_links.send();
+            var cont = 0;
             xhttp_links.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     //console.log(this.responseText);
                     list_links = JSON.parse(this.responseText);
                     var links = "";
-                    list_links.map((x) => {
+                    list_links.forEach((x) => {
+                        let animacion = "izquierda alt";
+                        console.log(cont % 2);
+                        if (cont % 2 == 0) {
+                            animacion = "derecha";
+                        }
+                        cont++;
                         if (x.link2 != "") {
-                            links += `<div class="blog-card">
+                            links += `<div class="blog-card ${animacion}">
                                     <div class="meta">
                                         <div class="photo" style="background-image: url(${x.img}); "></div>
                                         <ul class="details flex_column flex_center flex_center_vertical">
@@ -312,7 +236,7 @@
                                     </div>
                                 </div>`;
                         } else {
-                            links += `<div class="blog-card">
+                            links += `<div class="blog-card ${animacion}">
                                     <div class="meta">
                                         <div class="photo" style="background-image: url(${x.img}); "></div>
                                         <ul class="details flex_column flex_center flex_center_vertical">
@@ -332,10 +256,12 @@
                     });
                     $("#links").html(links);
                 }
+                $(".izquierda").addClass("desdeIzquierda");
+                $(".derecha").addClass("desdeDerecha");
             };
             /* setInterval(function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                VerificarFondo();
-                                                                                                                                                                                                                                                                                                                                                                                                            }, 6000); */
+VerificarFondo();
+}, 6000); */
         });
     </script>
 </body>
