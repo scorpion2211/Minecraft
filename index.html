@@ -12,10 +12,15 @@
     <!-- Place your stylesheet here-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/fontello/css/fontello.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/sweetalert.css" rel="stylesheet" />
 
     <style>
+        body {
+            height: 100vh;
+        }
+        
         .fondo {
             height: 100vh;
             width: 100%;
@@ -30,6 +35,8 @@
             min-height: 100vh;
             position: absolute;
             background: transparent;
+            width: 100%;
+            height: 100vh;
         }
         
         header {
@@ -91,19 +98,58 @@
         .f6c {
             background-image: url("assets/img/fondos/fondo6.jpg");
         }
+        
+        .loading {
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+            background-color: #000;
+            width: 100%;
+            height: 100vh;
+            color: #e15b64;
+            font-size: 3vw;
+            animation: girar 1.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        
+        .page {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+        }
+        
+        @keyframes girar {
+            0% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="fondo" id="fondo"></div>
     <main role="main" class="main_container">
-        <header class="text-center">
-            <img src="assets/img/logo.png" width="60%" alt="" />
-            <div>
-                <h1>SOUL</h1>
-            </div>
-        </header>
-        <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
+        <div class="loading flex_column flex_center flex_center_vertical" id="loading">
+            <h2 class="h1">Cargando...</h2>
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="page">
+            <header class="text-center">
+                <img src="assets/img/logo.png" width="60%" alt="" />
+                <div>
+                    <h1>SOUL</h1>
+                </div>
+            </header>
+            <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
+        </div>
     </main>
 
     <!-- Modal Video -->
@@ -215,6 +261,9 @@
 
         $(document).ready(function() {
             VerificarFondo();
+            setTimeout(() => {
+                $("#loading").hide();
+            }, 1500);
 
             const xhttp_links = new XMLHttpRequest();
             xhttp_links.open("GET", "links.json", true);
@@ -267,8 +316,8 @@
                 }
             };
             /* setInterval(function() {
-                                                        VerificarFondo();
-                                                    }, 6000); */
+                                                                                                                                                                                                                                                                                                                                        VerificarFondo();
+                                                                                                                                                                                                                                                                                                                                    }, 6000); */
         });
     </script>
 </body>
