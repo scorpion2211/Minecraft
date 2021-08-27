@@ -1,4 +1,13 @@
 [{
+        "titulo": "Pasos de Instalación",
+        "img": "assets/img/lista1.jpg",
+        "subtitulo": "instructivo",
+        "descripción": " Indica en que orden se deben ejecutar los archivos",
+        "link": "#",
+        "link2": "",
+        "download": "data-toggle='modal' data-target='#modal-instructivo'"
+    },
+    {
         "titulo": "Java",
         "img": "assets/img/java.jpeg",
         "subtitulo": "instalador",
@@ -60,14 +69,5 @@
         "link": "https://cdn.discordapp.com/attachments/877677594902933525/879498883212927016/iris-mc1.16.5-1.1.1shaders_administrator.jar",
         "link2": "https://cdn.discordapp.com/attachments/877677594902933525/879498943929667584/SEUS-Renewed-v1.0.1.zip",
         "download": "download"
-    },
-    {
-        "titulo": "Pasos de Instalación",
-        "img": "assets/img/lista1.jpg",
-        "subtitulo": "instructivo",
-        "descripción": " Indica en que orden se deben ejecutar los archivos",
-        "link": "#",
-        "link2": "",
-        "download": "data-toggle='modal' data-target='#modal-instructivo'"
     }
 ]
