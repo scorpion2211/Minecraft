@@ -12,12 +12,12 @@
         "img": "assets/img/java.jpeg",
         "subtitulo": "instalador",
         "descripción": " Es necesario tener esta versión de java para poder ejecutar el launcher del Minecraft.",
-        "link": "https://cdn.discordapp.com/attachments/879481428713275462/879564618031325254/jre-8u301-windows-x64.exe",
+        "link": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245060_d3c52aa6bfa54d3ca74e617f18309292",
         "link2": "",
         "download": "download"
     },
     {
-        "titulo": "Launcher Phoenix",
+        "titulo": "Launcher Fenix",
         "img": "assets/img/creeper.jpg",
         "subtitulo": "ejecutable",
         "descripción": " Este archivo deberás tenerlo a mano ya que será el que habra el juego.",
@@ -30,7 +30,7 @@
         "img": "assets/img/fabric.png",
         "subtitulo": "instalador",
         "descripción": " Tras haber instalado java y ejecutado el launcher, deberás instalar este archivo seleccionando en el primer campo la versión 1.16.5 y dejando el segundo como está.",
-        "link": "https://cdn.discordapp.com/attachments/879481428713275462/879539740083359754/fabric-installer-0.7.4_1.jar",
+        "link": "https://cdn.discordapp.com/attachments/880906186315141120/880906689208000582/fabric-installer-0.7.4_1.jar",
         "link2": "",
         "download": "download"
     },
@@ -66,8 +66,8 @@
         "img": "assets/img/shaders2.jpg",
         "subtitulo": "complemento",
         "descripción": " Mejora visual del juego. Requiere de una buena PC dado que es bastante pesado.",
-        "link": "https://cdn.discordapp.com/attachments/877677594902933525/879498883212927016/iris-mc1.16.5-1.1.1shaders_administrator.jar",
-        "link2": "https://cdn.discordapp.com/attachments/877677594902933525/879498943929667584/SEUS-Renewed-v1.0.1.zip",
+        "link": "https://cdn.discordapp.com/attachments/880906186315141120/880906571251601438/SEUS-Renewed-v1.0.1.zip",
+        "link2": "",
         "download": "download"
     }
 ]
