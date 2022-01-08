@@ -16,13 +16,13 @@ if exist MODSVAR.$$$ goto No
 
     cls
     echo Comenzando....
-    rd /s /q "%~d0%~p0\mods" /s
+    rd /s /q "%~d0%~p0\minecraft-mods" /s
     taskkill /IM javaw.exe /F
     del  "%userprofile%\AppData\Roaming\.minecraft\mods\*.jar"
     cls
-    git clone https://github.com/Soulote/mods.git
-    xcopy "%~d0%~p0\mods\*.*" "%userprofile%\AppData\Roaming\.minecraft\mods" /y
-    rd /s /q "%~d0%~p0\mods" /s
+    git clone https://github.com/scorpion2211/minecraft-mods.git
+    xcopy "%~d0%~p0\minecraft-mods\*.*" "%userprofile%\AppData\Roaming\.minecraft\mods" /y
+    rd /s /q "%~d0%~p0\minecraft-mods" /s
     cls
 
     echo Desea incluir el Mod para Shaders? [S/N] (luego enter)
