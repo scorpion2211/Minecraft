@@ -1,73 +1,74 @@
-[{
-        "titulo": "Pasos de Instalación",
-        "img": "assets/img/lista1.jpg",
-        "subtitulo": "instructivo",
-        "descripción": " Indica en que orden se deben ejecutar los archivos",
-        "link": "#",
-        "link2": "",
-        "download": "data-toggle='modal' data-target='#modal-instructivo'"
-    },
-    {
-        "titulo": "Java",
-        "img": "assets/img/java.jpeg",
-        "subtitulo": "instalador",
-        "descripción": " Es necesario tener esta versión de java para poder ejecutar el launcher del Minecraft.",
-        "link": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245060_d3c52aa6bfa54d3ca74e617f18309292",
-        "link2": "",
-        "download": "download"
-    },
-    {
-        "titulo": "Launcher Fenix",
-        "img": "assets/img/creeper.jpg",
-        "subtitulo": "ejecutable",
-        "descripción": " Este archivo deberás tenerlo a mano ya que será el que habra el juego.",
-        "link": "https://api.launcherfenix.com.ar/redirect?u=https%3A%2F%2Ffiles.launcherfenix.com.ar%2Fprelauncher%2Fv7%2FLauncherFenix-Minecraft-v7.exe&c&n=PreLauncherV7_EXE_Local",
-        "link2": "",
-        "download": "download"
-    },
-    {
-        "titulo": "Fabric Installer",
-        "img": "assets/img/fabric.png",
-        "subtitulo": "instalador",
-        "descripción": " Tras haber instalado java y ejecutado el launcher, deberás instalar este archivo seleccionando en el primer campo la versión 1.16.5 y dejando el segundo como está.",
-        "link": "https://cdn.discordapp.com/attachments/880906186315141120/880906689208000582/fabric-installer-0.7.4_1.jar",
-        "link2": "",
-        "download": "download"
-    },
-    {
-        "titulo": "GIT",
-        "img": "assets/img/git.jpg",
-        "subtitulo": "instalador",
-        "descripción": " Es necesario tener instalado GIT para poder ejecutar el actualizardor de MODS. Por favor para su instalación mire el <a href='#' data-toggle='modal' data-target='#modal-video'>video tutorial</a>.",
-        "link": "https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe",
-        "link2": "",
-        "download": "download"
-    },
-    {
-        "titulo": "Actualizador de MODS",
-        "img": "assets/img/actualizador.jpg",
-        "subtitulo": "script - Versión 2.4",
-        "descripción": " Con este archivo y su simple ejecución descargará los nuevos mods incorporados al servidor.",
-        "link": "assets/actualizador.bat",
-        "link2": "",
-        "download": "download"
-    },
-    {
-        "titulo": "Video Tutorial de GIT",
-        "img": "assets/img/video.jpg",
-        "subtitulo": "video",
-        "descripción": " Se muestra la descarga del programa y las opciones que deben seleccionarse al momento de la instalación para que el <b>Actualizador de Mods</b> funcione correctamente.",
-        "link": "assets/TutorialGit.mp4",
-        "link2": "",
-        "download": "data-toggle='modal' data-target='#modal-video'"
-    },
-    {
-        "titulo": "Shaders",
-        "img": "assets/img/shaders2.jpg",
-        "subtitulo": "complemento",
-        "descripción": " Mejora visual del juego. Requiere de una buena PC dado que es bastante pesado.",
-        "link": "https://cdn.discordapp.com/attachments/880906186315141120/880906571251601438/SEUS-Renewed-v1.0.1.zip",
-        "link2": "",
-        "download": "download"
-    }
+[
+  {
+    "titulo": "Pasos de Instalación",
+    "img": "assets/img/lista1.jpg",
+    "subtitulo": "instructivo",
+    "descripción": " Indica en que orden se deben ejecutar los archivos",
+    "link": "#",
+    "link2": "",
+    "download": "data-toggle='modal' data-target='#modal-instructivo'"
+  },
+  {
+    "titulo": "Java",
+    "img": "assets/img/java.jpeg",
+    "subtitulo": "instalador",
+    "descripción": " Es necesario tener esta versión de java para poder ejecutar el launcher del Minecraft.",
+    "link": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245060_d3c52aa6bfa54d3ca74e617f18309292",
+    "link2": "",
+    "download": "download"
+  },
+  {
+    "titulo": "Launcher Fenix",
+    "img": "assets/img/creeper.jpg",
+    "subtitulo": "ejecutable",
+    "descripción": " Este archivo deberás tenerlo a mano ya que será el que habra el juego.",
+    "link": "https://api.launcherfenix.com.ar/redirect?u=https%3A%2F%2Ffiles.launcherfenix.com.ar%2Fprelauncher%2Fv7%2FLauncherFenix-Minecraft-v7.exe&c&n=PreLauncherV7_EXE_Local",
+    "link2": "",
+    "download": "download"
+  },
+  {
+    "titulo": "Fabric Installer",
+    "img": "assets/img/fabric.png",
+    "subtitulo": "instalador",
+    "descripción": " Tras haber instalado java y ejecutado el launcher, deberás instalar este archivo seleccionando en el primer campo la versión 1.16.5 y dejando el segundo como está.",
+    "link": "assets/fabric-installer.jar",
+    "link2": "",
+    "download": "download"
+  },
+  {
+    "titulo": "GIT",
+    "img": "assets/img/git.jpg",
+    "subtitulo": "instalador",
+    "descripción": " Es necesario tener instalado GIT para poder ejecutar el actualizardor de MODS. Por favor para su instalación mire el <a href='#' data-toggle='modal' data-target='#modal-video'>video tutorial</a>.",
+    "link": "https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe",
+    "link2": "",
+    "download": "download"
+  },
+  {
+    "titulo": "Actualizador de MODS",
+    "img": "assets/img/actualizador.jpg",
+    "subtitulo": "script - Versión 2.5",
+    "descripción": " Con este archivo y su simple ejecución descargará los nuevos mods incorporados al servidor.",
+    "link": "assets/actualizador.bat",
+    "link2": "",
+    "download": "download"
+  },
+  {
+    "titulo": "Video Tutorial de GIT",
+    "img": "assets/img/video.jpg",
+    "subtitulo": "video",
+    "descripción": " Se muestra la descarga del programa y las opciones que deben seleccionarse al momento de la instalación para que el <b>Actualizador de Mods</b> funcione correctamente.",
+    "link": "assets/TutorialGit.mp4",
+    "link2": "",
+    "download": "data-toggle='modal' data-target='#modal-video'"
+  },
+  {
+    "titulo": "Shaders",
+    "img": "assets/img/shaders2.jpg",
+    "subtitulo": "complemento",
+    "descripción": " Mejora visual del juego. Requiere de una buena PC dado que es bastante pesado.",
+    "link": "https://github.com/scorpion2211/minecraft-shaders/archive/refs/heads/main.zip",
+    "link2": "",
+    "download": "download"
+  }
 ]

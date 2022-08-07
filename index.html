@@ -1,123 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
-    <meta name="description" content="Sitio Web hecho para juegar minecraft entre amigos" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Sitio Web hecho para juegar minecraft entre amigos"
+    />
     <meta name="author" content="Ignacio Arias" />
     <link rel="icon" href="favicon.png" />
     <title>Portal Minecraft</title>
 
     <!-- Place your stylesheet here-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/fontello/css/fontello.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/fontello/css/fontello.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/sweetalert.css" rel="stylesheet" />
 
     <style>
-        .f1 {
-            background-image: url("assets/img/fondo1.jpg");
-        }
-        
-        .f2 {
-            background-image: url("assets/img/fondo2.jpg");
-        }
-        
-        .f3 {
-            background-image: url("assets/img/fondo3.jpg");
-        }
-        
-        .f4 {
-            background-image: url("assets/img/fondo4.jpg");
-        }
-        
-        .f5 {
-            background-image: url("assets/img/fondo5.jpg");
-        }
-        
-        .f6 {
-            background-image: url("assets/img/fondo6.png");
-        }
-        
-        .f1c {
-            background-image: url("assets/img/fondos/fondo1.jpg");
-        }
-        
-        .f2c {
-            background-image: url("assets/img/fondos/fondo2.jpg");
-        }
-        
-        .f3c {
-            background-image: url("assets/img/fondos/fondo3.jpg");
-        }
-        
-        .f4c {
-            background-image: url("assets/img/fondos/fondo4.jpg");
-        }
-        
-        .f5c {
-            background-image: url("assets/img/fondos/fondo5.jpg");
-        }
-        
-        .f6c {
-            background-image: url("assets/img/fondos/fondo6.jpg");
-        }
-    </style>
-</head>
+      .f1 {
+        background-image: url("assets/img/fondo1.jpg");
+      }
 
-<body>
+      .f2 {
+        background-image: url("assets/img/fondo2.jpg");
+      }
+
+      .f3 {
+        background-image: url("assets/img/fondo3.jpg");
+      }
+
+      .f4 {
+        background-image: url("assets/img/fondo4.jpg");
+      }
+
+      .f5 {
+        background-image: url("assets/img/fondo5.jpg");
+      }
+
+      .f6 {
+        background-image: url("assets/img/fondo6.png");
+      }
+
+      .f1c {
+        background-image: url("assets/img/fondos/fondo1.jpg");
+      }
+
+      .f2c {
+        background-image: url("assets/img/fondos/fondo2.jpg");
+      }
+
+      .f3c {
+        background-image: url("assets/img/fondos/fondo3.jpg");
+      }
+
+      .f4c {
+        background-image: url("assets/img/fondos/fondo4.jpg");
+      }
+
+      .f5c {
+        background-image: url("assets/img/fondos/fondo5.jpg");
+      }
+
+      .f6c {
+        background-image: url("assets/img/fondos/fondo6.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="fondo" id="fondo"></div>
     <main role="main">
-        <div class="main_container">
-            <div class="container_loading">
-                <div class="loading flex_column flex_center flex_center_vertical" id="loading">
-                    <img src="assets/img/mine.gif" width="450px" alt="" />
-                    <!--img class="girar" src="assets/img/spinners/creeper3.png" width="80px" alt="" /-->
-                    <h2 class="h1">Cargando...</h2>
-                    <i class="fas fa-cog fa-spin"></i>
-                </div>
-            </div>
-            <div class="page fadeIn">
-                <header class="text-center">
-                    <img class="agrandar" src="assets/img/logo.png" width="60%" alt="" />
-                    <div>
-                        <h1 class="desdeArriba">EL BARRIO</h1>
-                    </div>
-                </header>
-                <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
-            </div>
+      <div class="main_container">
+        <div class="container_loading">
+          <div
+            class="loading flex_column flex_center flex_center_vertical"
+            id="loading"
+          >
+            <img src="assets/img/mine.gif" width="450px" alt="" />
+            <!--img class="girar" src="assets/img/spinners/creeper3.png" width="80px" alt="" /-->
+            <h2 class="h1">Cargando...</h2>
+            <i class="fas fa-cog fa-spin"></i>
+          </div>
         </div>
+        <div class="page fadeIn">
+          <header class="text-center">
+            <img
+              class="agrandar"
+              src="assets/img/logo.png"
+              width="60%"
+              alt=""
+            />
+            <div>
+              <h1 class="desdeArriba">LABOGADA</h1>
+            </div>
+          </header>
+          <div class="flex_row flex_around flex_wrap p-3" id="links"></div>
+        </div>
+      </div>
     </main>
 
     <!-- Modal App -->
-    <div class="modal fade" id="modal-instructivo" tabindex="-1" role="dialog" aria-labelledby="modal_app" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <form class="modal-content" id="form_send">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="title_app">Pasos de Instalación</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div
+      class="modal fade"
+      id="modal-instructivo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal_app"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <form class="modal-content" id="form_send">
+          <div class="modal-header">
+            <h5 class="modal-title" id="title_app">Pasos de Instalación</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
-                </div>
-                <div class="modal-body">
-                    <ol start="1">
-                        <li class="ml-2">1 - Instalar Java.</li>
-                        <li class="ml-2">2 - Ejecutar el Launcher Phoenix.</li>
-                        <li class="ml-2">
-                            3 - Click en <b>Editar Perfil</b> arriba a la derecha.
-                        </li>
-                        <li class="ml-2">
-                            4 - Seleccionar en <b>Jugar a la versión</b>: release 1.16.5 - Guardar Perfil.
-                        </li>
-                        <li class="ml-2">5 - Iniciar juego y cerrarlo.</li>
-                        <li class="ml-2">
-                            6 - Ejecutar Fabric Installer (solo seleccionar la primer versión 1.16.5, la segunda dejarla como viene por defecto).
-                        </li>
-                        <li class="ml-2">
-                            7 - Instalar GIT
-                            <a style="color: #0b5b8a; font-weight: bold" href="#" data-toggle="modal" data-target="#modal-video">(ver el tutorial)</a
+          </div>
+          <div class="modal-body">
+            <ol start="1">
+              <li class="ml-2">1 - Instalar Java.</li>
+              <li class="ml-2">2 - Ejecutar el Launcher Phoenix.</li>
+              <li class="ml-2">
+                3 - Click en <b>Editar Perfil</b> arriba a la derecha.
+              </li>
+              <li class="ml-2">
+                4 - Seleccionar en <b>Jugar a la versión</b>: release 1.16.5 -
+                Guardar Perfil.
+              </li>
+              <li class="ml-2">5 - Iniciar juego y cerrarlo.</li>
+              <li class="ml-2">
+                6 - Ejecutar Fabric Installer (solo seleccionar la primer
+                versión 1.16.5, la segunda dejarla como viene por defecto).
+              </li>
+              <li class="ml-2">
+                7 - Instalar GIT
+                <a
+                  style="color: #0b5b8a; font-weight: bold"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#modal-video"
+                  >(ver el tutorial)</a
                 >
               </li>
               <li class="ml-2">8 - Ejecutar el Actualizador de Mods.</li>
@@ -130,6 +175,7 @@
                 (opcional).
               </li>
               <li>11 - Click en Iniciar Juego.</li>
+              <li>12 - Agregar servidor: <b>labogada.ddns.net</b></li>
             </ol>
           </div>
         </form>
@@ -285,7 +331,9 @@
                                                                     <a href="#">${descarga}</a>
                                                                 </p-->
                 </div>
-        </div>`; } else { links += `
+        </div>`;
+              } else {
+                links += `
         <div class="blog-card ${animacion}">
             <div class="meta">
                 <div class="photo" style="background-image: url(${x.img}); "></div>
@@ -301,8 +349,15 @@
                                                     <a href="#">${descarga}</a>
                                                 </p-->
             </div>
-        </div>`; } }); $("#links").html(links); } $(".izquierda").addClass("desdeIzquierda"); $(".derecha").addClass("desdeDerecha"); }; /* setInterval(function() { VerificarFondo(); }, 6000); */ });
-        </script>
-</body>
-
+        </div>`;
+              }
+            });
+            $("#links").html(links);
+          }
+          $(".izquierda").addClass("desdeIzquierda");
+          $(".derecha").addClass("desdeDerecha");
+        }; /* setInterval(function() { VerificarFondo(); }, 6000); */
+      });
+    </script>
+  </body>
 </html>
