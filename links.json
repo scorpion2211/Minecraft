@@ -31,7 +31,7 @@
     "img": "assets/img/fabric.png",
     "subtitulo": "instalador",
     "descripción": " Tras haber instalado java y ejecutado el launcher, deberás instalar este archivo seleccionando en el primer campo la versión 1.16.5 y dejando el segundo como está.",
-    "link": "assets/fabric-installer.jar",
+    "link": "https://cdn.discordapp.com/attachments/1005859686832152636/1005982593654718634/fabric-installer-0.7.4_1.jar",
     "link2": "",
     "download": "download"
   },
